@@ -1,0 +1,33 @@
+<template>
+  <div>
+    <van-address-list
+      v-model="chosenAddressId"
+      :list="list"
+      :disabled-list="disabledList"
+      disabled-text="以下地址超出配送范围"
+      default-tag-text="默认"
+      @add="onAdd"
+      @edit="onEdit"
+    />
+  </div>
+</template>
+
+<script>
+export default {
+  name: "",
+  //接受父组件传递的数据
+  props: {},
+  //注册组件
+  components: {},
+  data() {
+    return {};
+  },
+  methods: {},
+  mounted() {},
+  watch: {},
+  computed: {},
+};
+</script>
+
+<style scoped lang='scss'>
+</style>
