@@ -204,8 +204,8 @@ const router = new VueRouter({
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title //跳转路由的标题为在meta中定义的名字
   let user = localStorage.getItem('admitUser') //根据本地存储的名字作为判断
-  if (to.path === "/Login") next() //先判断跳转路由是否为去登录页面
-  else user ? next() : next("/Login") //再判断是否本地有名字，有的话正常跳转，没有的话跳转到登录页面
+  if (to.path === "/login") next() //先判断跳转路由是否为去登录页面
+  else user ? next() : next("/login") //再判断是否本地有名字，有的话正常跳转，没有的话跳转到登录页面
 })
 
 export default router
